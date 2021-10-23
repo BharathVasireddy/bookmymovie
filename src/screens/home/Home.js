@@ -161,9 +161,9 @@ export default function Home({ baseUrl }) {
                 <ImageList rowHeight={250} cols={6} >
                     {upcomingMovies.map(upcomingMovie => (
                         <ImageListItem key={upcomingMovie.id}>
-                            <img alt="" src={upcomingMovie.poster_url} />
+                            <img alt="" src={upcomingMovie.poster_url} height='250' />
                             <ImageListItemBar
-                                title={upcomingMovie.title}
+                                title={upcomingMovie.title} height='250'
                             />
                         </ImageListItem>
                     ))}
